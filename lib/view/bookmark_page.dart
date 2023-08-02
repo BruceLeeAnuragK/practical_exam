@@ -50,14 +50,17 @@ class _BookMarksState extends State<BookMarks> {
                 child: ListView.builder(
                   itemCount: provider.bookmarkModel.quotes.length,
                   itemBuilder: (context, index) => ListTile(
-                    title: Text("${provider.bookmarkModel.quotes[index]}"),
+                    title: Text(
+                      "${provider.bookmarkModel.quotes[index]}",
+                      style: TextStyle(
+                        color: Colors.deepPurple,
+                      ),
+                    ),
                     trailing: IconButton(
                       onPressed: () {
                         Provider.of<QuoteBookMarkProvider>(context,
                                 listen: false)
-                            .chagequotes(
-                                quotes:
-                                    "${provider.bookmarkModel.deletequotes}");
+                            .deletequotes(quotes: "");
                       },
                       icon: Icon(
                         Icons.delete,

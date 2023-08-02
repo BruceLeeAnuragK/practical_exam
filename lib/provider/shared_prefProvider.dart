@@ -13,12 +13,15 @@ class QuoteBookMarkProvider extends ChangeNotifier {
   chagequotes({required String quotes}) async {
     bookmarkModel.quotes.add(quotes);
     SharedPreferences Pref = await SharedPreferences.getInstance();
+
     await Pref.setStringList("BOOKMARKKEY", bookmarkModel.quotes);
 
-    bookmarkModel.quotes.remove(quotes);
-    SharedPreferences deletePref = await SharedPreferences.getInstance();
-    await deletePref.setStringList("DELETEBOOKMARKKEY", bookmarkModel.quotes);
+    notifyListeners();
+  }
 
+  deletequotes({required String quotes}) async {
+    SharedPreferences Pref = await SharedPreferences.getInstance();
+    Pref.remove("BOOKMARKKEY");
     notifyListeners();
   }
 

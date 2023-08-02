@@ -38,8 +38,6 @@ class _QuotesDetailScreenState extends State<QuotesDetailScreen> {
                 onPressed: () {
                   Provider.of<QuoteBookMarkProvider>(context, listen: false)
                       .chagequotes(quotes: provider.AllQuotes[index].quote);
-                  Provider.of<QuoteBookMarkProvider>(context, listen: false)
-                      .chagequotes(quotes: provider.AllQuotes[index].image);
                 },
                 icon: Icon(
                   Icons.bookmark,
