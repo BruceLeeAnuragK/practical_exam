@@ -1,5 +1,7 @@
 class QuotesBookmarkModel {
-  String quotes;
+  List<String> quotes;
 
-  QuotesBookmarkModel({required this.quotes});
+  QuotesBookmarkModel({
+    required this.quotes,
+  });
 }

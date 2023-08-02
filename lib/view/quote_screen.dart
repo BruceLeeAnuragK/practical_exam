@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:practical_exam/helper/helper_class.dart';
 import 'package:practical_exam/provider/QuoteProvider.dart';
+import 'package:practical_exam/provider/shared_prefProvider.dart';
 import 'package:provider/provider.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -33,7 +34,9 @@ class _QuotePageState extends State<QuotePage> {
               onChanged: (val) => provider.changetheme(val: val),
             ),
             IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed("bookmark");
+                },
                 icon: Icon(
                   Icons.star_border,
                   size: 25,
@@ -112,8 +115,15 @@ class _QuotePageState extends State<QuotePage> {
                                     color: Colors.deepPurple,
                                     child: ListTile(
                                       onTap: () {
-                                        Navigator.of(context).pushNamed("0");
+                                        Navigator.of(context)
+                                            .pushNamed("quotes_detail_page");
                                         provider.changeCurrentPageIndex(index);
+                                        Provider.of<QuoteBookMarkProvider>(
+                                                context,
+                                                listen: false)
+                                            .chagequotes(
+                                                quotes: provider
+                                                    .AllQuotes[index].quote);
                                       },
                                       title: Text(
                                         provider.AllQuotes[index].quote,
