@@ -37,6 +37,8 @@ dependencies:
   connectivity_plus:
   shared_preferences:
   response:
+  carousel_slider:
+  dots_indicator:
 
 dev_dependencies:
   flutter_test:

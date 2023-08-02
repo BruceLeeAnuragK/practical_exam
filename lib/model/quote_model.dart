@@ -1,11 +1,19 @@
 class QuotesModel {
-  int audio;
-  String quotes;
-  String auther;
+  int id;
+  String quote;
+  String author;
 
   QuotesModel({
-    required this.audio,
-    required this.quotes,
-    required this.auther,
+    required this.id,
+    required this.quote,
+    required this.author,
   });
+
+  factory QuotesModel.fromMap({required Map quotes}) {
+    return QuotesModel(
+      id: quotes["id"],
+      quote: quotes["quote"],
+      author: quotes["author"],
+    );
+  }
 }

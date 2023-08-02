@@ -34,22 +34,30 @@ class _IntroScreenState extends State<IntroScreen> {
                 borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
                   image: NetworkImage(
-                      "https://cdn.dribbble.com/users/2277649/screenshots/8498294/weather_dribbble_size.gif.gif"),
+                      "https://i.pinimg.com/originals/6f/48/b4/6f48b4a2465a0b8d0750a2d87e8f3bd8.jpg"),
                   fit: BoxFit.fill,
                 ),
               ),
             ),
-            Text(
-              "Weather App",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.blue.shade100,
-                fontWeight: FontWeight.bold,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.format_quote_sharp,
+                    size: 50, color: Colors.deepPurple),
+                Text(
+                  "Quotes App",
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.deepPurple,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Icon(Icons.format_quote_sharp,
+                    size: 50, color: Colors.deepPurple),
+              ],
             ),
-            Icon(Icons.cloud, size: 300, color: Colors.blue.shade100),
             CircularProgressIndicator(
-              color: Colors.blue.shade100,
+              color: Colors.deepPurple,
             ),
           ],
         ),
