@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:practical_exam/provider/QuoteProvider.dart';
 import 'package:practical_exam/view/quote_screen.dart';
+import 'package:practical_exam/view/quotes_detail_screen.dart';
 import 'package:practical_exam/view/splash_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-void main() {
+void main() async {
+  SharedPreferences pref = await SharedPreferences.getInstance();
+  pref.getStringList("BOOKMARKKEY");
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(
@@ -36,6 +40,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => QuotePage(),
         "splash_screen": (context) => IntroScreen(),
+        "quotes_detail_page": (context) => QuotesDetailScreen(),
       },
     );
   }

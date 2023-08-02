@@ -46,6 +46,7 @@ class _QuotePageState extends State<QuotePage> {
         body: Column(
           children: [
             Expanded(
+              flex: 2,
               child: CarouselSlider(
                 items: provider.imageList.map((i) {
                   return Container(
@@ -81,36 +82,77 @@ class _QuotePageState extends State<QuotePage> {
               ),
             ),
             Expanded(
-              child: SizedBox(
-                height: 300,
-                child: ListView.builder(
-                  itemCount: provider.AllQuotes.length,
-                  itemBuilder: (context, index) => Card(
-                    child: ListTile(
-                      onTap: () {},
-                      title: Text(
-                        provider.AllQuotes[index],
-                        style: TextStyle(
-                          color: provider.isDark ? Colors.white : Colors.brown,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      subtitle: Text(
-                        provider.AllQuotes[index],
-                        style: TextStyle(
-                          color: provider.isDark ? Colors.white : Colors.brown,
-                        ),
-                      ),
-                      leading: Text("Ch:${provider.AllQuotes[index]}"),
-                      trailing: Icon(
-                        Icons.navigate_next,
-                        color: provider.isDark ? Colors.white : Colors.brown,
-                        size: 20,
+              flex: 3,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: MaterialButton(
+                      color: Colors.deepPurple,
+                      onPressed: () {
+                        provider.changeQuotes(0);
+                        provider.fetchAllQuotes = provider.fetchAllQuotes + 1;
+                      },
+                      child: Text(
+                        "Fetch Quotes",
+                        style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ),
                   ),
-                ),
+                  provider.fetchAllQuotes > 0
+                      ? Expanded(
+                          child: SizedBox(
+                            height: 300,
+                            child: ListView.builder(
+                                itemCount: provider.fetchAllQuotes,
+                                itemBuilder: (context, index) {
+                                  print("id: ${provider.AllQuotes[index].id}");
+                                  print("index ${index}");
+                                  return Card(
+                                    color: Colors.deepPurple,
+                                    child: ListTile(
+                                      onTap: () {
+                                        Navigator.of(context).pushNamed("0");
+                                        provider.changeCurrentPageIndex(index);
+                                      },
+                                      title: Text(
+                                        provider.AllQuotes[index].quote,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      subtitle: Text(
+                                        provider.AllQuotes[index].author,
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      leading: Text(
+                                        "Ch:${provider.AllQuotes[index].id}",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      trailing: Icon(
+                                        Icons.navigate_next,
+                                        color: Colors.white,
+                                        size: 20,
+                                      ),
+                                    ),
+                                  );
+                                }),
+                          ),
+                        )
+                      : Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "The Quotes will be appera here, press Fetch Quotes to get alll Quotes",
+                              style: TextStyle(
+                                  color: Colors.deepPurple.shade100,
+                                  fontSize: 10),
+                            )
+                          ],
+                        )
+                ],
               ),
             ),
           ],

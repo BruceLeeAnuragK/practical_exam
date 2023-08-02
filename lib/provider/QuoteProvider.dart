@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:practical_exam/helper/helper_class.dart';
 import 'package:practical_exam/model/quote_model.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class QuotesProvider extends ChangeNotifier {
   bool isDark = false;
@@ -20,12 +21,19 @@ class QuotesProvider extends ChangeNotifier {
     return 0;
   }
 
+  int QuotesIndex = 0;
+  changeQuotes(int index) {
+    QuotesIndex = index;
+    notifyListeners();
+  }
+
   int currentIndex = 0;
   changeCurrentPageIndex(int index) {
     currentIndex = index;
     notifyListeners();
   }
 
+  int fetchAllQuotes = 0;
   List imageList = [
     "https://louisem.com/wp-content/uploads/2022/11/hustle-quotes-FB.jpg",
     "https://www.trvst.world/wp-content/uploads/2021/11/purple-color-quotes-teufel-damon-under-the-purple-sky-fulgent-stars-in-subdued-m-5350.png",
