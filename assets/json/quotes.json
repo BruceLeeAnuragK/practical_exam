@@ -2,151 +2,188 @@
     {
       "id": 1,
       "quote": "Life isn’t about getting and having, it’s about giving and being.",
-      "author": "Kevin Kruse"
+      "author": "Kevin Kruse",
+      "image": "https://pbs.twimg.com/media/Bnn2piuIEAEP5kg.png"
     },
     {
       "id": 2,
       "quote": "Whatever the mind of man can conceive and believe, it can achieve.",
-      "author": "Napoleon Hill"
+      "author": "Napoleon Hill",
+      "image": "https://selfmadesuccess.com/wp-content/uploads/2015/07/whatever-the-mind-can-conceive-and-believe-the-mind-can-achieve_opt.png"
     },
     {
       "id": 3,
       "quote": "Strive not to be a success, but rather to be of value.",
-      "author": "Albert Einstein"
+      "author": "Albert Einstein",
+      "image": "https://i.pinimg.com/originals/78/e9/6a/78e96a84e9493eeb697e81e025a1ec5e.jpg"
+
     },
     {
       "id": 4,
       "quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
-      "author": "Robert Frost"
+      "author": "Robert Frost",
+      "image": "https://i.pinimg.com/originals/78/e9/6a/78e96a84e9493eeb697e81e025a1ec5e.jpg"
     },
     {
       "id": 5,
       "quote": "I attribute my success to this: I never gave or took any excuse.",
-      "author": "Florence Nightingale"
+      "author": "Florence Nightingale",
+      "image": "https://www.coolnsmart.com/img/9/i-attribute-my-success-to-20389-1.jpg"
     },
     {
       "id": 6,
       "quote": "You miss 100% of the shots you don’t take.",
-      "author": "Wayne Gretzky"
+      "author": "Wayne Gretzky",
+      "image": "https://i.etsystatic.com/5954374/r/il/f73c4b/2724848034/il_fullxfull.2724848034_htos.jpg"
+
     },
     {
       "id": 7,
       "quote": "I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.",
-      "author": "Michael Jordan"
+      "author": "Michael Jordan",
+      "image": "https://pbs.twimg.com/media/DdKxKygX0AAadEQ.jpg"
     },
     {
       "id": 8,
       "quote": "The most difficult thing is the decision to act, the rest is merely tenacity.",
-      "author": "Amelia Earhart"
+      "author": "Amelia Earhart",
+      "image": "https://i.pinimg.com/originals/d3/17/77/d31777da0d57e3033d23f3e00d992677.jpg"
     },
     {
       "id": 9,
       "quote": "Every strike brings me closer to the next home run.",
-      "author": "Babe Ruth"
+      "author": "Babe Ruth",
+      "image": "https://i.pinimg.com/736x/6c/4c/c5/6c4cc53e960b25089803daaed4ea88d3.jpg"
     },
     {
       "id": 10,
       "quote": "Definiteness of purpose is the starting point of all achievement.",
-      "author": "W. Clement Stone"
+      "author": "W. Clement Stone",
+      "image": "https://i.pinimg.com/736x/44/48/6e/44486e5244ac7418397b5f1147fccb45.jpg"
     },
     {
       "id": 11,
       "quote": "We must balance conspicuous consumption with conscious capitalism.",
-      "author": "Kevin Kruse"
+      "author": "Kevin Kruse",
+      "image": "https://quotescover.com/wp-content/uploads/We-must-balance-conspicuous-consumption__quotes-by-Kevin-Kruse-58-612x612.png"
     },
     {
       "id": 12,
       "quote": "Life is what happens to you while you’re busy making other plans.",
-      "author": "John Lennon"
+      "author": "John Lennon",
+      "image": "https://i.pinimg.com/564x/f4/d6/90/f4d69037b3d5f02c54c65f1e980fa605.jpg"
+
+
     },
     {
       "id": 13,
       "quote": "We become what we think about.",
-      "author": "Earl Nightingale"
+      "author": "Earl Nightingale",
+      "image": "https://www.abundancenolimits.com/wp-content/uploads/2022/03/We-Become-What-We-Think-About.jpg"
     },
     {
       "id": 14,
       "quote": "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.",
-      "author": "Mark Twain"
+      "author": "Mark Twain",
+      "image": "https://images.squarespace-cdn.com/content/v1/5b84ac01aa49a1a46aa033de/1551240865449-FQ1OL960C0GAQHUGC8VX/ymiw-quote-413.jpg"
     },
     {
       "id": 15,
       "quote": "Life is 10% what happens to me and 90% of how I react to it.",
-      "author": "Charles Swindoll"
+      "author": "Charles Swindoll",
+      "image": "https://i.pinimg.com/236x/96/aa/2e/96aa2eac4d13a6c5b4bc5ec6c9fafb53.jpg"
     },
     {
       "id": 16,
       "quote": "The most common way people give up their power is by thinking they don’t have any.",
-      "author": "Alice Walker"
+      "author": "Alice Walker",
+      "image": "https://live.staticflickr.com/8350/8262208294_a344e514b2.jpg"
     },
     {
       "id": 17,
       "quote": "The mind is everything. What you think you become.",
-      "author": "Buddha"
+      "author": "Buddha",
+      "image": "https://i.pinimg.com/236x/db/76/a4/db76a4e9ace0d92c9729a4c077ae57e1.jpg"
     },
     {
       "id": 18,
       "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
-      "author": "Chinese Proverb"
+      "author": "Chinese Proverb",
+      "image": "https://motivation.com/assets/uploads/img/large/tree-proverb-quote.jpg"
+
     },
     {
       "id": 19,
       "quote": "An unexamined life is not worth living.",
-      "author": "Socrates"
+      "author": "Socrates",
+      "image": "https://i.pinimg.com/564x/6c/df/ca/6cdfcac5a90519bbc4b9fec424d20d3b.jpg"
     },
     {
       "id": 20,
       "quote": "Eighty percent of success is showing up.",
-      "author": "Woody Allen"
+      "author": "Woody Allen",
+      "image": "https://i.pinimg.com/564x/5f/22/75/5f22753226d2c6f24d9439ba629628fd.jpg"
     },
     {
       "id": 21,
       "quote": "Your time is limited, so don’t waste it living someone else’s life.",
-      "author": "Steve Jobs"
+      "author": "Steve Jobs",
+      "image": "https://i.pinimg.com/236x/12/08/40/1208402e28734924e9d6ccc6e1766122.jpg"
     },
     {
       "id": 22,
       "quote": "Winning isn’t everything, but wanting to win is.",
-      "author": "Vince Lombardi"
+      "author": "Vince Lombardi",
+      "image": "https://www.portsidemarketing.com/wp-content/uploads/Winning-isnt-everything-Quote-of-the-Day.jpg"
     },
     {
       "id": 23,
       "quote": "I am not a product of my circumstances. I am a product of my decisions.",
-      "author": "Stephen Covey"
+      "author": "Stephen Covey",
+      "image": "https://i.pinimg.com/236x/84/21/28/842128127fb46377984c8a6ebddcabdc.jpg"
     },
     {
       "id": 24,
       "quote": "Every child is an artist.  The problem is how to remain an artist once he grows up.",
-      "author": "Pablo Picasso"
+      "author": "Pablo Picasso",
+      "image": "https://i.pinimg.com/564x/75/33/8c/75338c685dcba14bfe6a058b21c760e2.jpg"
     },
     {
       "id": 25,
       "quote": "You can never cross the ocean until you have the courage to lose sight of the shore.",
-      "author": "Christopher Columbus"
+      "author": "Christopher Columbus",
+      "image": "https://i.pinimg.com/564x/f3/65/65/f365654c6971325a49648e2294f8970e.jpg"
+
     },
     {
       "id": 26,
       "quote": "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
-      "author": "Maya Angelou"
+      "author": "Maya Angelou",
+      "image": "https://i.pinimg.com/564x/07/59/fb/0759fbac3cb7ea35d5fc7bb26919f900.jpg"
+
     },
     {
       "id": 27,
       "quote": "Either you run the day, or the day runs you.",
-      "author": "Jim Rohn"
+      "author": "Jim Rohn",
+      "image": "https://i.pinimg.com/564x/13/92/67/13926768c679c35416690d16fd8f1aed.jpg"
     },
     {
       "id": 28,
       "quote": "Whether you think you can or you think you can’t, you’re right.",
-      "author": "Henry Ford"
+      "author": "Henry Ford",
+      "image": "https://i.pinimg.com/236x/d4/16/bd/d416bdbf588bf9ee2959c920f13bf27e.jpg"
     },
     {
       "id": 29,
       "quote": "The two most important days in your life are the day you are born and the day you find out why.",
-      "author": "Mark Twain"
+      "author": "Mark Twain",
+      "image": "https://i.pinimg.com/564x/91/d4/af/91d4af75bd914203a4a1efe26699135c.jpg"
     },
     {
       "id": 30,
       "quote": "Whatever you can do, or dream you can, begin it.  Boldness has genius, power and magic in it.",
-      "author": "Johann Wolfgang von Goethe"
+      "author": "Johann Wolfgang von Goethe",
+      "image": "https://i.pinimg.com/564x/7f/1d/54/7f1d54023bdae8586316d3c7cc41f0d6.jpg"
     }
 ]

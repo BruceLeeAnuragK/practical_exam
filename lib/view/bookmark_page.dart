@@ -13,32 +13,80 @@ class _BookMarksState extends State<BookMarks> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "BookMarks",
-            style: TextStyle(
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        title: Text(
+          "BookMarks",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            color: Colors.white,
+            size: 20,
+          ),
+        ),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.grid_view_outlined,
               color: Colors.white,
             ),
           ),
-          centerTitle: true,
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.grid_view_outlined,
-                color: Colors.deepPurple,
+        ],
+      ),
+      body: Consumer<QuoteBookMarkProvider>(
+        builder: (context, provider, child) {
+          return Column(
+            children: [
+              Expanded(
+                child: ListView.builder(
+                  itemCount: provider.bookmarkModel.quotes.length,
+                  itemBuilder: (context, index) => ListTile(
+                    title: Text("${provider.bookmarkModel.quotes[index]}"),
+                    trailing: IconButton(
+                      onPressed: () {
+                        Provider.of<QuoteBookMarkProvider>(context,
+                                listen: false)
+                            .chagequotes(
+                                quotes:
+                                    "${provider.bookmarkModel.deletequotes}");
+                      },
+                      icon: Icon(
+                        Icons.delete,
+                        size: 20,
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                  ),
+                ),
               ),
-            ),
-          ],
-        ),
-        body: Consumer<QuoteBookMarkProvider>(
-            builder: (context, provider, child) {
-          return ListView.builder(
-            itemCount: provider.bookmarkModel.quotes.length,
-            itemBuilder: (context, index) => ListTile(
-              title: Text("${provider.bookmarkModel.quotes[index]}"),
-            ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: provider.imagebookmarkModel.image.length,
+                  itemBuilder: (context, index) => ListTile(
+                    leading: AspectRatio(
+                      aspectRatio: 2,
+                      child: CircleAvatar(
+                        foregroundImage: NetworkImage(
+                          provider.imagebookmarkModel.image[index],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
           );
-        }));
+        },
+      ),
+    );
   }
 }
